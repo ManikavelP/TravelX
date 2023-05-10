@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Process</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <h1 class="book-h2">Book Your Trip</h1>
+  <section class="Booking">
+    
+    <form action="" method="post" id="myForm" class="book_form" onsubmit="return submitForm(event)">
+
+      <div class="row">
+        <div class="col">
+          <div class="input_box">
+            <span>Name:</span>
+            <input type="text" id="name" placeholder="Enter your name" name="name" required>
+          </div>
+          <div class="input_box">
+            <span>Email:</span>
+            <input type="email" id="email" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="input_box">
+            <span>Phone:</span>
+            <input type="tel" id="phone" placeholder="Enter your phone number" name="phone" required>
+          </div>
+          <div class="input_box">
+            <span>Address:</span>
+            <input type="text" id="address" placeholder="Enter your address" name="address" required>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input_box">
+            <span>Where to:</span>
+            <input type="text" id="location" placeholder="Enter your destination" name="location" required>
+          </div>
+          <div class="input_box">
+            <span>How many days:</span>
+            <input type="number" id="days" placeholder="Enter number of days" name="days" required>
+          </div>
+          <div class="input_box">
+            <span>Arrival date:</span>
+            <input type="date" id="arrival-date" name="arrival-date" required>
+          </div>
+          <div class="input_box">
+            <span>Leaving date:</span>
+            <input type="date" id="leaving-date" name="leaving-date" required>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Submit" class="submit-btn" name="send">
+    </form>
+  </section>
+  <script src="booking.js"></script>
+  
+</body>
+</html>
+
+
+
